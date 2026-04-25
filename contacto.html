@@ -1,0 +1,99 @@
+<!-- Villarreal, Maximiliano Ulises. 2C-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header> 
+        <h1>ATACK ON TITAN</h1>
+        <h2>Una serie sin heroes</h2>
+        <hr>
+    </header>
+    <NAV>
+        <img src="./Img/aot-logo.png" alt="LogoAOT">
+        <a href="./index.html">Inicio</a>
+        <a href="./info.html">Info</a>
+        <a href="./contacto.html">Contacto</a>
+        <hr>
+    </NAV>
+    
+    <main>
+        <h2>FORMULARIO</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+
+                <br><br>
+                <label for="tel">telefono (0):</label>
+                <label for=""></label>
+                <input type="number" id="tel" name="tel">
+
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"> 
+
+                <br><br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+
+                <br><br>
+                <label for="pais"> País:</label>
+                <select name="pais" id="pais">
+                    <option value="arg">Argentina</option>
+                    <option value="bra">Brasil</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br><br>
+
+                <p>Género: </p>
+                <input type="radio" name="genero" id="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="genero" id="otro">
+                <label for="otro">Terian</label>
+
+
+                <p>Intereses: </p>
+                <input type="checkbox" id="anime">
+                <label for="anime">Anime</label>
+                <input type="checkbox" id="juegos">
+                <label for="juegos">Juegos</label>
+                <input type="checkbox" id="series">
+                <label for="series">Series</label>
+            </fieldset>
+        </form>
+    
+        <fieldset>
+            <legend> Opiniones: </legend>
+            <label for="mensaje"> Ingresar una opinion sobre la serie: </label><br>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Formulario">
+        <br><br>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
+        <p>&copy;2026 Villarreal Ulises | Salta</p>
+        <hr>
+    </footer>
+        
+
+</body>
+</html>
