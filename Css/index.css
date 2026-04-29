@@ -1,0 +1,23 @@
+body {
+    background-image: url('../Img/Fondo.jpg');
+    background-size: cover;                /* Ajusta la imagen para cubrir todo */
+    background-position: center center;    /* Centra la imagen */
+    background-repeat: no-repeat;          /* No repite la imagen */
+    background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
+    height: 100vh;                         /* Altura del 100% de la ventana */
+}
+
+h1 {
+    color: #2D4354;
+}
+
+h2 {
+    color: #2D4354; 
+}
+
+
+nav img {
+    width: 300px;
+    height: 100px;
+    ;
+}
