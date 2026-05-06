@@ -9,13 +9,21 @@ body {
 
 h1 {
     color: #2D4354;
+    text-align: center;
 }
 
 h2 {
     color: #2D4354; 
+    text-align: center;
 }
 
-
+nav {
+    background-color: rgba(4, 49, 123, 0.5);
+    
+}
+main{
+    
+}
 nav img {
     width: 300px;
     height: 100px;
