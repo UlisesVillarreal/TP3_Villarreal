@@ -1,4 +1,7 @@
+/* General */
+
 body {
+    margin: 0px;
     font-family:'Poppins', sans-serif;
     background-image: url('../Img/Fondo.jpg');
     background-size: cover;                /* Ajusta la imagen para cubrir todo */
@@ -7,17 +10,29 @@ body {
     background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
     height: 100vh;                         /* Altura del 100% de la ventana */
 }
-main {
+.main {
     line-height: 1.5;
+    padding: 0px 20px 30px 20px;
 }
 
 .titulo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1e1e1ec9
+}
+.subtitulo {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
     color: #1e1e1ec9
 }
-
+.subtitulo2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e1e1eec
+}
 .navbar {
     background-color: #1e1e1e6c;   
     display: flex;
@@ -61,9 +76,85 @@ main {
     width: 100%;
 } 
 
-.footer {   
+.indice{
+    margin: 0px auto;
+    width: 25%;
+    border: 2px;
+    border-style: solid;
+    padding: 0px 30px;
+    color: #1e1e1eca;
+    border-color: #1e1e1e8f;
+}
+
+.indice_links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+.indice_links a{
+    text-decoration: none;
+    color: #1e1e1eca;
+    font-weight: 500;
+    position: relative;
+}
+
+.indice_links a:hover{
+    color: #00bcd4
+}
+
+/* linea bajo los links indice*/
+.indice_links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s;
+}
+.indice_links a:hover::after{
+    width: 100%;
+} 
+
+.banner {
+    display: block;
+    margin: auto;
+    
+}
+.footer {
+    
     padding: 1px;
     background-color: #1e1e1e6c;
     text-align: center;
     color: rgba(255, 255, 255, 0.447);
 }
+
+
+/* seccion de info */
+
+.tabla {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla thead{
+    border-style: solid;
+    border-color: #1e1e1e95;
+    background-color: #1e1e1e6c;
+    color: white;
+}
+.tabla td{
+    border-style: solid;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #1e1e1e2b;
+    border-color: #1e1e1e95;
+    color: #1e1e1e;
+}
+

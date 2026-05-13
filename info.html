@@ -9,10 +9,7 @@
     <title>Info</title>
 </head>
 <body>
-    <header class="titulo"> 
-        <h1>ATACK ON TITAN</h1>
-        <h2>Una serie sin heroes</h2>
-    </header>
+
     <NAV class="navbar">
         <ul class="nav_links">
             <li><a href="./index.html">Inicio</a></li>
@@ -23,19 +20,28 @@
         <img src="./Img/aot-logo.png" alt="LogoAOT" class="logo">
     </NAV>
 
+    <header > 
+        <h1 class="titulo">ATACK ON TITAN</h1>
+        <h2 class="subtitulo">Una serie sin heroes</h2>
+    </header>
+
     <section>
-        <strong>Indice: </strong>
-        <a href="#tabla">Temporadas</a>
-        <a href="#lista1">Emisión</a>
-        <a href="#lista2">Características</a>
-        <a href="#conceptos">Definiciones</a>
-    </section>
-    <main>
-        <h2>Información sobre la serie</h2>
-        <table id="tabla">
-            <h3>Detalle de temporadas</h3>
+        <fieldset class="indice">
+            <legend>Indice</legend>
+            <ul class ="indice_links">
+                <li><a href="#tabla">Temporadas</a></li>
+                <li><a href="#lista1">Emisión</a></li>
+                <li><a href="#lista2">Características</a></li>
+                <li><a href="#conceptos">Definiciones</a></li>
+            </ul>
+        </fieldset>
+        </section>
+    <main class="main">
+        <h2 class="subtitulo">Información sobre la serie</h2>
+        <table class="tabla">
+            <h3 class="subtitulo2">Detalle de temporadas</h3>
             <thead>
-                <tr>
+                <tr >
                     <th>Temporada </th>
                     <th>Parte </th>
                     <th>Capitulos </th>
@@ -70,13 +76,8 @@
                 </tr>
             </tbody>
 
-            <tfoot>
-                <tr>
-                    <td>Fuente: Wikipedia</td>
-                </tr>
-            </tfoot>
         </table>
-
+        <p class="subtitulo2">Fuente: Wikipedia</p>
         <section id="lista1">
             <ol>
                 <h3>Fecha de emisión de cada temporada:</h3>
@@ -130,10 +131,8 @@
     </main>
 
     <footer class="footer">
-        <hr>
         <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
         <p>&copy;2026 Villarreal Ulises | Salta</p>
-        <hr>
     </footer>
 </body>
 </html>
