@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    font-family:'Poppins', sans-serif;
+    background-image: url('../Img/Backgrounfinal.png');
+    background-size: cover;                /* Ajusta la imagen para cubrir todo */
+    background-position: center center;    /* Centra la imagen */
+    background-repeat: no-repeat;          /* No repite la imagen */
+    background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
+    height: 100vh;                         /* Altura del 100% de la ventana */
+}
+.main {
+    line-height: 1.5;
+    padding: 0px 20px 30px 20px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 0px;
+    gap: 10.5px;
+}
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1e1e1ec9
+}
+.subtitulo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e1e1ec9
+}
+.subtitulo2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e1e1eec
+}
+.navbar {
+    background-color: #1e1e1e6c;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo {
+    width: 250px;;
+    ;
+}
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 16px 0px 0px 0px;
+}
+.nav_links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav_links a:hover{
+    color: #00bcd4
+}
+
+/* linea bajo los links*/
+.nav_links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+.nav_links a:hover::after{
+    width: 100%;
+} 
+.indice ul {
+    margin: 0px auto 20px;
+    width: 35%;
+    border: 1px solid black;
+}
+.indice a {
+    color: #EAD7B7;
+    transition: 0.3s;
+}
+.indice a:hover {
+    color: #fff9f2;
+}
+
+.main th, .main td {
+    background-color: #70451439;
+    color: antiquewhite;
+    border: black solid 1px;
+}
+
+
+
+
+
+
+
+.footer {
+    
+    padding: 10px 0px;
+    background-color: #1e1e1e6c;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.447);
+}

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="./Css/contacto.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
@@ -61,21 +61,39 @@
                 <br><br>
 
                 <p>Género: </p>
-                <input type="radio" name="genero" id="hombre">
-                <label for="hombre">Hombre</label>
-                <input type="radio" name="genero" id="mujer">
-                <label for="mujer">Mujer</label>
-                <input type="radio" name="genero" id="otro">
-                <label for="otro">Terian</label>
-
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                    Hombre
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    Mujer
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    Terian
+                </label>
+                </div>
 
                 <p>Intereses: </p>
                 <input type="checkbox" id="anime">
-                <label for="anime">Anime</label>
+                <label for="anime">Anime
+                </label>
+
                 <input type="checkbox" id="juegos">
-                <label for="juegos">Juegos</label>
+                <label for="juegos">
+                    Juegos
+                </label>
+                
                 <input type="checkbox" id="series">
-                <label for="series">Series</label>
+                <label for="series">
+                    Series
+                </label>
             </fieldset>
         </form>
     
@@ -92,10 +110,10 @@
     </main>
 
     <footer class="footer">
-        <hr>
+
         <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
         <p>&copy;2026 Villarreal Ulises | Salta</p>
-        <hr>
+
     </footer>
         
 
