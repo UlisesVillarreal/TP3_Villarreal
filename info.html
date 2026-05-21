@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Css/Info.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
 </head>
 <body>
+
     <NAV class="navbar">
         <ul class="nav_links">
             <li><a href="./index.html">Inicio</a></li>
@@ -20,135 +20,120 @@
         <img src="./Img/aot-logo.png" alt="LogoAOT" class="logo">
     </NAV>
 
-    <header class="header"> 
-        <h1 class="titulo">ATACK ON TITAN</h1>
-        <h2 class="subtitulo">Una serie sin heroes</h2>
-    </header>
-    <div class="indice">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#tabla">Temporadas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#lista1">Emisión</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#lista2">Características</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#conceptos">Definiciones</a>
-            </li>
-        </ul>
+    <div id="grilla" class="every">
+        <header id="header" class="border"> 
+            <h1 class="titulo">ATACK ON TITAN</h1>
+            <h2 class="subtitulo">Información sobre la serie</h2>
+        </header>
+
+        <section id="indice" class="border">
+            <fieldset>
+                <legend>Indice</legend>
+                <ul class ="indice_links">
+                    <li><a href="#tabla">Temporadas</a></li>
+                    <li><a href="#lista1">Emisión</a></li>
+                    <li><a href="#lista2">Características</a></li>
+                    <li><a href="#conceptos">Definiciones</a></li>
+                </ul>
+            </fieldset>
+        </section>
+        <main id="main" class="border">
+            
+            <table class="tabla">
+                <thead>
+                    <tr >
+                        <th>Temporada </th>
+                        <th>Parte </th>
+                        <th>Capitulos </th>
+                        <th>Año </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1 </td>
+                        <td>25</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>12</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>22</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>30+2</td>
+                        <td>2020-2023</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section id="lista1">
+                <ol>
+                    <h3>Fecha de emisión de cada temporada:</h3>
+                    <li>Temporada 1: 2013</li>
+                    <li>Temporada 2: 2017</li>
+                    <li>Temporada 3: 2018</li>
+                    <li>Temporada 4 (Final Season):
+                        <ol>
+                            <li>Parte 1: 2020</li>
+                            <li>Parte 2: 2022</li>
+                            <li>Parte 3: 2023</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="lista2">
+                <ul>
+                    <H3>Caracteristicas</H3>
+                    <li>Autor: Hajime Isayama</li>
+                    <li>Nacionalidad del autor: Japonesa</li>
+                    <li>Año de inicio del manga: 2009</li>
+                    <li>Año de finalización del manga: 2021</li>
+                    <li>Publicación: Revista Bessatsu Shōnen Magazine</li>
+                    <li>Estudio de anime: Wit Studio (temporadas 1-3) / MAPPA (temporada final)</li>
+                    <li>Año de estreno del anime: 2013</li>
+                    <li>Género: Acción, drama, fantasía oscura, postapocalíptico</li>
+                    <li>Demografía: Shōnen</li>
+                    <li>Estado: Finalizado</li>
+                </ul>
+            </section>
+
+            <section id="conceptos">
+                <h3>Algunas definiciones:</h3>
+                <dl>
+                    <dt><strong>TITANES</strong></dt>
+                    <DD>En la serie, antiguos humanos forzados a convertirse en humanoides gigantes sin inteligencia, movidos por el deseo de devorar a otros humanos.</DD>
+                </dl>
+                <dl>
+                    <dt><strong>TITANES CAMBIANTES</strong></dt>
+                    <dd>humanos con la capacidad de transformarse en titanes inteligentes, poseedores de habilidades únicas, considerados armas para sus correspondientes regiones.</dd>
+                </dl>
+                <dl>
+                    <dt><strong>ELDIANOS</strong></dt>
+                    <dd>Una raza que puede convertirse en titanes. La mayoría de los habitantes dentro de los muros pertenecen a esta raza.</dd>
+                </dl>
+                <dl>
+                    <dt><strong>RETUMBAR</strong></dt>
+                    <dd>Evento catastrófico que utiliza a los titanes colosales dormidos dentro de las murallas para arrasar el mundo exterior.</dd>
+                </dl>
+            </section>
+        </main>
+
+        <footer id="footer" class="border">
+            <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
+            <p>&copy;2026 Villarreal Ulises | Salta</p>
+        </footer>
     </div>
-    <br>
-    <main class="main">
-        <h2 class="subtitulo">Información sobre la serie</h2>
-        <table class="table table-hover">
-            <br>
-            <h3 class="subtitulo2">Detalle de temporadas</h3>
-            <thead>
-                <tr >
-                    <th>Temporada </th>
-                    <th>Parte </th>
-                    <th>Capitulos </th>
-                    <th>Año </th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr class="fila">
-                    <td>1</td>
-                    <td>1 </td>
-                    <td>25</td>
-                    <td>2013</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>12</td>
-                    <td>2017</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>22</td>
-                    <td>2018</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>30+2</td>
-                    <td>2020-2023</td>
-                </tr>
-            </tbody>
-
-        </table>
-        <p>Fuente: Wikipedia</p>
-        <section id="lista1">
-            <ol>
-                <h3>Fecha de emisión de cada temporada:</h3>
-                <li>Temporada 1: 2013</li>
-                <li>Temporada 2: 2017</li>
-                <li>Temporada 3: 2018</li>
-                <li>Temporada 4 (Final Season):
-                    <ol>
-                        <li>Parte 1: 2020</li>
-                        <li>Parte 2: 2022</li>
-                        <li>Parte 3: 2023</li>
-                    </ol>
-                </li>
-            </ol>
-        </section>
-        <section id="lista2">
-            <ul>
-                <H3>Caracteristicas</H3>
-                <li>Autor: Hajime Isayama</li>
-                <li>Nacionalidad del autor: Japonesa</li>
-                <li>Año de inicio del manga: 2009</li>
-                <li>Año de finalización del manga: 2021</li>
-                <li>Publicación: Revista Bessatsu Shōnen Magazine</li>
-                <li>Estudio de anime: Wit Studio (temporadas 1-3) / MAPPA (temporada final)</li>
-                <li>Año de estreno del anime: 2013</li>
-                <li>Género: Acción, drama, fantasía oscura, postapocalíptico</li>
-                <li>Demografía: Shōnen</li>
-                <li>Estado: Finalizado</li>
-            </ul>
-        </section>
-
-        <section id="conceptos">
-            <h3>Algunas definiciones:</h3>
-            <dl>
-                <dt><strong>TITANES</strong></dt>
-                <DD>En la serie, antiguos humanos forzados a convertirse en humanoides gigantes sin inteligencia, movidos por el deseo de devorar a otros humanos.</DD>
-            </dl>
-            <dl>
-                <dt><strong>TITANES CAMBIANTES</strong></dt>
-                <dd>humanos con la capacidad de transformarse en titanes inteligentes, poseedores de habilidades únicas, considerados armas para sus correspondientes regiones.</dd>
-            </dl>
-            <dl>
-                <dt><strong>ELDIANOS</strong></dt>
-                <dd>Una raza que puede convertirse en titanes. La mayoría de los habitantes dentro de los muros pertenecen a esta raza.</dd>
-            </dl>
-            <dl>
-                <dt><strong>RETUMBAR</strong></dt>
-                <dd>Evento catastrófico que utiliza a los titanes colosales dormidos dentro de las murallas para arrasar el mundo exterior.</dd>
-            </dl>
-        </section>
-
-        <section class="mapa">
-            <h3> Lugar de origen del manga </h3>
-            <p> La obra creada por el mangaka Hajime Isayama es origenaria como franquicia en Japón</p>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12735.0983565669!2d138.63265894146292!3d35.473678648060556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601be721e912db77%3A0xed043493c8ad92e1!2sAokigahara!5e0!3m2!1ses-419!2sar!4v1779228687923!5m2!1ses-419!2sar" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
-        <p>&copy;2026 Villarreal Ulises | Salta</p>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
