@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+    font-family:'Poppins', sans-serif;
+    background-image: url('../Img/Backgrounfinal.png');
+    background-size: cover;                /* Ajusta la imagen para cubrir todo */
+    background-position: center center;    /* Centra la imagen */
+    background-repeat: no-repeat;          /* No repite la imagen */
+    background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
+    height: 100vh;  
+    color: #EAD7B7;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.logo {
+    height: 140px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 5% 0px 8%;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.datos input, .datos button {
+    border-radius: 10px;
+    padding: 5px 50px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #EAD7B7;
+}
+.datos input:hover, .datos button:hover{
+    background-color: #e6ddcf;
+    scale: 1.02;
+}
+
+.popup{
+    position: fixed;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ead7b7;
+    padding: 30px;
+    border: black 2px solid;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.popup:hover{
+    background-color: #ecddc5;
+}
+.popup button {
+    background-color: #f2d39d;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.popup button:hover {
+    scale: 1.05;
+    background-color: #ecddc5aa;
+}
+
+
+
+.footer {
+    
+    padding: 10px 0px;
+    background-color: #00000049;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.447);
+}

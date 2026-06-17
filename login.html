@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Css/login.css    ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo"> ATACK ON TITAN </h1>
+        <img src="./Img/aot-logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="login">
+        <h2 class="subtitulo">Iniciar Sesión</h2>
+
+        <form action="" method="post" class="datos" id="formLogin">
+            <input type="text" name="usuario" placeholder="Usuario" required id="user">
+
+            <input type="password" name="password" placeholder="Contraseña" required id="password">
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <div id="bienvenida" class="popup">
+        <h2>¡Bienvenido a AOT!</h2>
+        <p>Usuario: admin</p>
+        <p>Contraseña: password</p>
+        <button onclick="cerrarPopup()">Aceptar</button>
+    </div>
+
+
+    <footer class="footer">
+        <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
+        <p>&copy;2026 Villarreal Ulises | Salta</p>
+    </footer>
+
+
+
+    <script src="./Js/login.js"></script>
+</body>
+</html>

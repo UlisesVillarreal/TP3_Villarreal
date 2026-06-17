@@ -85,14 +85,20 @@ footer { grid-area: footer; }
     border: 2px solid #8c5e3c;
     padding: 5px;
     border-radius: 5px;
-    color: #8c5e3c;
+    color: #ead7b7c2;
     text-decoration: none;
 }
 
 .nav_links a:hover{
     background-color: #8c5d3c4d;
 }
-
+#cerrar{
+    color: #EAD7B7;
+    background-color: rgba(108, 2, 2, 0.196);
+}
+#cerrar:hover{
+    background-color: #560101a6;
+}
 /* main */
 
 .every main {

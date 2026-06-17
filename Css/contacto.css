@@ -50,7 +50,20 @@ body {
     color: #00bcd4
 }
 
+
+
 /* linea bajo los links*/
+#cerrar {
+    color: rgba(255, 0, 0, 0.484);
+}
+
+#cerrar::after{
+    background: rgba(255, 0, 0, 0.484) ;
+}
+#cerrar:hover {
+    color: rgba(255, 0, 0, 0.484);
+}
+
 .nav_links a::after{
     content: "";
     position: absolute;
