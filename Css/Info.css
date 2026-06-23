@@ -9,6 +9,12 @@ body {
     height: 100vh;                         /* Altura del 100% de la ventana */
 }
 
+
+.logo {
+    width: 250px;
+}
+
+/* seccion del navbar */
 .navbar {
     background-color: #1e1e1e6c;   
     display: flex;
@@ -16,9 +22,7 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
-.logo {
-    width: 250px;
-}
+
 .nav_links {
     list-style: none;
     display: flex;
@@ -32,22 +36,16 @@ body {
     position: relative;
 }
 
+
+/* linea bajo los links*/
+
 #cerrar {
     color: rgba(255, 0, 0, 0.484);
 }
-
 #cerrar::after{
     background: rgba(255, 0, 0, 0.484) ;
 }
-#cerrar:hover {
-    color: rgba(255, 0, 0, 0.484);
-}
 
-.nav_links a:hover{
-    color: #00bcd4
-}
-
-/* linea bajo los links*/
 .nav_links a::after{
     content: "";
     position: absolute;
@@ -63,6 +61,10 @@ body {
     width: 100%;
 } 
 
+
+
+
+/* -----------grilla---------- */
 #grilla {
     display: grid;
     grid-template-areas: 
@@ -71,137 +73,60 @@ body {
         "main main main"
         "footer footer footer";
     grid-template-columns: 6fr 5fr 1fr ;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
 }
 #header{ grid-area: header; }
 #indice{ grid-area: indice; }
-main   { grid-area: main; }
-footer { grid-area: footer; }   
+#main   { grid-area: main; }
+#footer { grid-area: footer; }   
+/* -------------------------- */
 
-.every header {
+
+
+
+/* ------ Indice ------ */
+#indice ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
+    list-style: none;
+    background-color: #1e1e1e6c;
+    padding: 20%;
 }
-.every header h1,h2{
+#indice ul li a{
     color: #EAD7B7;
-    margin: 0px;
-}
-
-#indice {
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
-    color: #EAD7B7;
-    background-color: #1a1412ce;
-    border-radius: 20px;
-    text-align: center;
-    border: 1px solid #EAD7B7;
-}
-.every #indice fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
-.every #indice fieldset ul{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    gap: 30px;
-    padding: 0px;
-}
-.every #indice fieldset li{
-    border: 1px solid #EAD7B7;
-    border-radius: 10px;
-    padding: 5px;
-
-}
-.every #indice fieldset li a{
     text-decoration: none;
-    background-color: #1a141200;
-    padding: 5px;
-    color: #EAD7B7;
 }
 
-.every #indice fieldset li:hover{
-    border: 1px solid #EAD7B7;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #ead7b730;
-}
+
 
 #main {
     margin: 0px 10px ;
     color: #EAD7B7;
-    display: grid;
-    grid-template-areas: 
-        "tabla tabla"
-        "lista1 lista2"
-        "conceptos conceptos";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.tabla { grid-area: tabla; }
-#lista1{ grid-area: lista1; }
-#lista2{ grid-area: lista2; }
-#conceptos{grid-area: conceptos;}
-
-.tabla {
-    border-collapse: collapse;
-    background-color: #1a1412ce;
-    text-align: center;
-    margin: 0px 0px 70px 0px;
-}
-
-.tabla th, td {
-    border: 2px solid #EAD7B7;
-    
-}
-
-#lista1 {
-    background-color: #1a1412ce;
-    text-align: center;
-    margin: 10px 5px 10px 0px;
-    border: 2px solid #EAD7B7;
-    height: 70%;
-    border-radius: 20px;
-}
-#lista1 ol{
     display: flex;
     flex-direction: column;
-    list-style: none;
-    gap: 10px;
-    text-align: start;
 }
 
-#lista2 {
-    background-color: #1a1412ce;
-    text-align: center;
-    margin: 10px 0px 10px 5px;
-    border: 2px solid #EAD7B7;
-    height: 70%;
-    border-radius: 20px;
-}
-#lista2 ul {
+.listas {
     display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: start;
+    justify-content: center;
+    list-style-type: none;
 }
 
-#conceptos {
-    background-color: #1a1412ce;
-    text-align: center;
-    border: 2px solid #EAD7B7;
-    height: 70%;
-    border-radius: 20px;
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer {
-    
     background-color: #1a141268;
     text-align: center;
     color: #EAD7B7;
