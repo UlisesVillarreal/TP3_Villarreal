@@ -3,7 +3,7 @@ body {
     font-family:'Poppins', sans-serif;
     background-image: url('../Img/Backgrounfinal.png');
     background-size: cover;                /* Ajusta la imagen para cubrir todo */
-    background-position: center center;    /* Centra la imagen */
+    background-position: center;           /* Centra la imagen */
     background-repeat: no-repeat;          /* No repite la imagen */
     background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
     height: 100vh;                         /* Altura del 100% de la ventana */
@@ -72,8 +72,8 @@ body {
         "main main main"
         "main main main"
         "footer footer footer";
-    grid-template-columns: 6fr 5fr 1fr ;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 6fr 4fr 2fr ;
+    grid-template-rows: 1fr 3fr 2fr 0.5fr;
 }
 #header{ grid-area: header; }
 #indice{ grid-area: indice; }
@@ -85,42 +85,79 @@ body {
 
 
 /* ------ Indice ------ */
-#indice ul {
+#indice {
+    margin: 0px 10px;
+}
+.indice_links{
     display: flex;
     flex-direction: column;
-    list-style: none;
-    background-color: #1e1e1e6c;
-    padding: 20%;
+    list-style: none;    
+
+    background-color: #1a141282;
+    padding: 10% 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 5PX;
 }
-#indice ul li a{
+.indice_links li {
+    text-align: center;
+}
+
+.indice_links li a, .indice_links li p{
+    text-align: center;
     color: #EAD7B7;
     text-decoration: none;
 }
+.indice_links li a:hover{
+    color: #ede6da;
+}
+/* ------------------------- */
 
 
+.titulo {
+    color: #EAD7B7;
+    padding: 1%;
+}
 
+
+/* ------ Main ------ */
 #main {
     margin: 0px 10px ;
     color: #EAD7B7;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .listas {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     list-style-type: none;
+
 }
 
+.tablas {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #1a141282;
+    padding: 2%;
+    margin: 0px 0px 5% 0px;
+    backdrop-filter: blur(1px);
+    border-collapse: collapse;
+    transition: 0.5s;
+}
 
+.tablas th, .tablas td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
 
-
-
-
-
-
-
-
+.tablas:hover  {
+    background-color: #1a14129f;
+    border: 2px solid #ead7b783;
+    scale: 0.9;
+}
 
 
 
@@ -130,5 +167,5 @@ body {
     background-color: #1a141268;
     text-align: center;
     color: #EAD7B7;
-    
+    backdrop-filter: blur(1px);
 }

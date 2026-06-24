@@ -76,7 +76,7 @@ body {
 
 
 .footer {
-    
+    backdrop-filter: blur(1px);
     padding: 10px 0px;
     background-color: #00000049;
     text-align: center;

@@ -13,7 +13,7 @@
     <NAV class="navbar">
         <ul class="nav_links">
             <li><a href="./index.html">Inicio</a></li>
-            <a href="./contacto.html">Contacto</a>
+            <li><a href="./contacto.html">Contacto</a></li>
             <li><a href="./login.html" id="cerrar">Cerrar Sesión</a></li>
         </ul>
 
@@ -21,22 +21,24 @@
     </NAV>
 
     <div id="grilla">
-        <header id="header" > 
-            <h1 class="titulo">ATACK ON TITAN</h1>
-            <h2 class="subtitulo">Información sobre la serie</h2>
+        <header id="header" class="titulo" > 
+            <h1 >ATACK ON TITAN</h1>
+            <h2 >Información sobre la serie</h2>
         </header>
 
         <section id="indice">
             <ul class ="indice_links">
+                <li><p>indice</p></li>
                 <li><a href="#tabla">Temporadas</a></li>
-                <li><a href="#lista1">Emisión</a></li>
-                <li><a href="#lista2">Características</a></li>
+                <li><a href="#fechas">Emisión</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
                 <li><a href="#conceptos">Definiciones</a></li>
             </ul>
         </section>
         <main id="main">
             
-            <table>
+            <table class="tablas">
+                <h2>Temporadas:</h2>
                 <thead>
                     <tr >
                         <th>Temporada </th>
@@ -74,12 +76,15 @@
                 </tbody>
             </table>
             <section class="listas">
-                <section id="fechas">
+                <section id="fechas" class="tablas">
                     <ol>
                         <h3>Fecha de emisión de cada temporada:</h3>
                         <li>Temporada 1: 2013</li>
+                        <br>    
                         <li>Temporada 2: 2017</li>
+                        <br>
                         <li>Temporada 3: 2018</li>
+                        <br>
                         <li>Temporada 4 (Final Season):
                             <ol>
                                 <li>Parte 1: 2020</li>
@@ -90,7 +95,7 @@
                     </ol>
                 </section>
 
-                <section id="caracteristicas">
+                <section id="caracteristicas" class="tablas">
                     <ul>
                         <H3>Caracteristicas</H3>
                         <li>Autor: Hajime Isayama</li>
@@ -107,7 +112,7 @@
                 </section>
             </section>
 
-            <section id="conceptos">
+            <section id="conceptos" class="tablas">
                 <h3>Algunas definiciones:</h3>
                 <dl>
                     <dt><strong>TITANES</strong></dt>
@@ -129,6 +134,7 @@
         </main>
 
         <footer id="footer">
+            <br>
             <p>- Mas informacion en <a href="https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki">Wiki AOT</a></p>
             <p>&copy;2026 Villarreal Ulises | Salta</p>
         </footer>

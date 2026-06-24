@@ -99,11 +99,14 @@ footer { grid-area: footer; }
 #cerrar:hover{
     background-color: #560101a6;
 }
-/* main */
+
+
+/* ----- main ----- */
 
 .every main {
     margin: 10px 0px 10px 10px ;
     display: flex;
+    backdrop-filter: blur(1.2px);
 }
 .every main section {
     padding-inline: 10px;
@@ -117,6 +120,7 @@ footer { grid-area: footer; }
 
 /* footer */
 .every footer {
+    backdrop-filter: blur(1px);
     padding: 1px;
     background-color: #1a141268;
     text-align: center;
