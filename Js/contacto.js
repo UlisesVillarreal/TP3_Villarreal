@@ -29,10 +29,11 @@ formulario.addEventListener("submit", function(event){
         document.getElementById("cardPais").textContent =
             `País: ${pais}`;
 
-        // seleccion de genero
 
+        // seleccion de genero
         const generoSeleccionado = document.querySelector('input[name="genero"]:checked').value;
         document.getElementById("cardGenero").textContent = `Género: ${generoSeleccionado}`;
+
 
         // selección de intereses
         const interesesSeleccionados = document.querySelectorAll('input[name="intereses"]:checked');
@@ -45,7 +46,6 @@ formulario.addEventListener("submit", function(event){
         document.getElementById("cardIntereses").textContent =
         `Intereses: ${intereses.join(", ")}`;
 
-
         formulario.reset();
 
     }else{
@@ -54,6 +54,7 @@ formulario.addEventListener("submit", function(event){
         return;
     }
 });
+
 
 // Agregar una opinión
 const btnAgregar = document.getElementById("btnAgregar");
@@ -80,6 +81,7 @@ btnAgregar.addEventListener("click", function(){
     document.getElementById("mensaje").value = "";
 
 });
+
 
 //eliminar la última opción
 const btnEliminar = document.getElementById("btnEliminar");

@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    font-family:'Poppins', sans-serif;
+    background-image: url('../Img/Backgrounfinal.png');
+    background-size: cover;                /* Ajusta la imagen para cubrir todo */
+    background-position: center;           /* Centra la imagen */
+    background-repeat: no-repeat;          /* No repite la imagen */
+    background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
+    height: 100vh;                         /* Altura del 100% de la ventana */
+}
+
+.logo {
+    width: 250px;
+}
+
+/* seccion del navbar */
+.navbar {
+    background-color: #1e1e1e6c;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 16px 0px 0px 0px;
+}
+.nav_links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.61);
+    font-weight: 500;
+    position: relative;
+}
+
+/* linea bajo los links*/
+#cerrar {
+    color: rgba(255, 0, 0, 0.484);
+}
+#cerrar::after{
+    background: rgba(255, 0, 0, 0.484) ;
+}
+.nav_links a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+.nav_links a:hover::after{
+    width: 100%;
+} 
+
+
+/* main */
+.titulo{
+    color: #e7decd;
+    text-align: center;
+    margin: 20px;
+}
+.carousel{
+    margin-bottom: 30px;
+}
+.carousel img{
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* footer */
+.footer {
+    background-color: #1a141268;
+    text-align: center;
+    color: #EAD7B7;
+    backdrop-filter: blur(1px);
+}
