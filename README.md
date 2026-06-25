@@ -96,5 +96,6 @@ A partir de aqui, primero debera ingresar la cuenta y contraseñas pre-estableci
 ## Autor
 
 **Maximiliano Ulises Villarreal**
+**2c - 2026**
 
 Trabajo práctico de Desarrollo Web.
