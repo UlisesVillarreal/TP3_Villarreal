@@ -5,7 +5,7 @@ body {
     font-family:'Poppins', sans-serif;
     background-image: url('../Img/Backgrounfinal.png');
     background-size: cover;                /* Ajusta la imagen para cubrir todo */
-    background-position: center center;    /* Centra la imagen */
+    background-position: center;    /* Centra la imagen */
     background-repeat: no-repeat;          /* No repite la imagen */
     background-attachment: fixed;          /* Mantiene el fondo fijo al hacer scroll */
     height: 100vh;                         /* Altura del 100% de la ventana */
@@ -26,66 +26,54 @@ header { grid-area: header; }
 nav    { grid-area: navbar; }
 main   { grid-area: main; }
 footer { grid-area: footer; }   
-.border {
-    border: 1px solid rgba(0, 0, 0, 0);
 
-}
 
 /* Header */
 .logo {
-    width: 250px;;
-    ;
+    width: 250px;
 }
 
-.every header {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.every header div {
-    display: flex;
-    flex-direction: column;
-    
-}
 .titulo {
     margin: 0px 10px;
     font-size: 30px;
-    font-weight: 600;
-    color: #ead7b769
+    color: #ead7b7ca
 }
 .subtitulo {
     margin: 0px 10px;
     font-size: 20px;
-    font-weight: 600;
-    color: #EAD7B769
+    color: #ead7b7a5
 }
 
 /* Navbar */
-
 .logo2 {
     width: 100%;
     opacity: 0.3;
 }
-.every nav {
+.navbar {
     margin: 0px 10px 0px 10px;
     background-color: #1a141268;
 }
-.every nav ul { 
+.navbar ul { 
     display: flex;
-    gap: 20px;
     flex-direction: column;
     padding: 10px 20px;
+    gap: 20px;
     list-style: none;
 }
 
-.every nav ul li a{
+.nav_links li a{
     display: inline-block;
     width: 90%;
     text-align: center;
     border: 2px solid #8c5e3c;
     padding: 5px;
     border-radius: 5px;
-    color: #ead7b7c2;
+    color: #ead7b7;
     text-decoration: none;
 }
 
@@ -93,7 +81,6 @@ footer { grid-area: footer; }
     background-color: #8c5d3c4d;
 }
 #cerrar{
-    color: #EAD7B7;
     background-color: rgba(108, 2, 2, 0.196);
 }
 #cerrar:hover{
@@ -102,33 +89,27 @@ footer { grid-area: footer; }
 
 
 /* ----- main ----- */
-
-.every main {
+.main {
     margin: 10px 0px 10px 10px ;
     display: flex;
     backdrop-filter: blur(1.2px);
 }
-.every main section {
+.main section {
     padding-inline: 10px;
     background-color: #1a141268;
     color: #EAD7B7;
 }
-.imgrostro {
+.banner {
     padding: 20PX 0PX 0PX;
     width: 125px;
 }
 
 /* footer */
-.every footer {
+.footer {
     backdrop-filter: blur(1px);
     padding: 1px;
     background-color: #1a141268;
     text-align: center;
     color: #EAD7B7
 }
-
-.every footer p a {
-    color: #8c5e3c;
-}
-
 
