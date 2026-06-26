@@ -13,34 +13,35 @@ formulario.addEventListener("submit", function(event){
     if(usuario === "admin" && password === "password"){
         usuarioAutenticado = true;
         console.log("Usuario valido");
-        alert("Se ah cargado los datos en la tarjeta con éxito!");
-
+        
         const nombre=document.getElementById("nombre").value;
         const apellido=document.getElementById("apellido").value
         const edad=document.getElementById("edad").value;
         const pais=document.getElementById("pais").value;
-
+        
         document.getElementById("cardNombre").textContent =
-            `Nombre: ${nombre}`;
+        `Nombre: ${nombre}`;
         document.getElementById("cardApellido").textContent =
-            `Apellido: ${apellido}`;
+        `Apellido: ${apellido}`;
         document.getElementById("cardEdad").textContent =
-            `Edad: ${edad}`;
+        `Edad: ${edad}`;
         document.getElementById("cardPais").textContent =
-            `País: ${pais}`;
-
-
+        `País: ${pais}`;
+        
+        
         // seleccion de genero
         const generoSeleccionado = document.querySelector('input[name="genero"]:checked').value;
         document.getElementById("cardGenero").textContent = `Género: ${generoSeleccionado}`;
-
-
+        
+        
         // selección de intereses
         const interesesSeleccionados = document.querySelectorAll('input[name="intereses"]:checked');
         const intereses = [];
-
+        
         interesesSeleccionados.forEach(interes => {
             intereses.push(interes.value);
+
+        alert("Se ah cargado los datos en la tarjeta con éxito!");
         });
 
         document.getElementById("cardIntereses").textContent =

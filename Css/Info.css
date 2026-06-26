@@ -44,7 +44,6 @@ body {
 #cerrar::after{
     background: rgba(255, 0, 0, 0.484) ;
 }
-
 .nav_links a::after{
     content: "";
     position: absolute;

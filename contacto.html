@@ -13,7 +13,7 @@
             <ul class="nav_links">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./info.html">Info</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./contacto.html">Tarjeta</a></li>
                 <li><a href="./galeria.html">Galeria</a></li>
                 <li><a href="./login.html" id="cerrar">Cerrar Sesión</a></li>
             </ul>
@@ -22,13 +22,15 @@
         </nav>
 
         <header > 
-            <h1 class="titulo">- Contacto -</h1>
+            <h1 class="titulo">- Generar Tarjeta -</h1>
         </header>
 
         <!-- main -->
         <main class="main">
             <form id="formTarjeta">
                 <fieldset class="seccion">
+
+                    <!-- Datos personales -->
                     <legend>Datos personales</legend>
                     
                     <label for="nombre">Nombre:</label>
@@ -51,6 +53,7 @@
                     </select>
                     <br><br>
 
+                    <!-- género -->
                     <p>Género: </p>
                     <section>
                         <input type="radio" name="genero" id="hombre" value="hombre" required>
@@ -72,6 +75,7 @@
                     </section>
                 </fieldset>
 
+                <!-- intereses -->
                 <fieldset class="seccion">
                     <legend>  
                         Intereses
@@ -92,6 +96,7 @@
                     </label>
                 </fieldset>
 
+                <!-- Ingresar Cuenta -->
                 <fieldset class="seccion">
                     <legend> Ingresar cuenta</legend>
                     <label for="user">Usuario: </label>
@@ -109,6 +114,8 @@
                 </button>
                 <br><br>
             </form>
+
+            <!-- opiniones -->
             <fieldset class="seccion">
                 <legend>Opiniones</legend>
                 <p>Danos tus opiniones de la serie</p>
